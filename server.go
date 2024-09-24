@@ -22,7 +22,7 @@ func runScript() ([]byte, error) {
 		return cachedOutput, nil
 	}
 
-	cmd := exec.Command("python3", "dispenser.py")
+	cmd := exec.Command("python3", "script.py")
 	output, err := cmd.Output()
 	if err != nil {
 		return nil, err
